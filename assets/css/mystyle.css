@@ -68,7 +68,7 @@ body {
   margin-bottom: 100px;
 }
 
-.title-guarantee {
+.blackbox {
   background-color: #000000;
   background-position: center;
   background-size: cover;
@@ -76,6 +76,7 @@ body {
   padding-bottom: 25px;
   color: white;
 }
+
 
 #text1_g {
   color: #ebbd00;

@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/mystyle.css') ?> ">
 
     <title>Property</title>
 </head>
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="title-guarantee">
+    <div class="blackbox">
         <div class="text-center">
             <p id="text1_g">Lorem Ipsum</p>
             <p id="text2_g">Lorem Ipsum</p>
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="title-guarantee">
+    <div class="blackbox">
         <div class="text-center">
             <p id="text2_g">Lorem Ipsum</p>
         </div>
