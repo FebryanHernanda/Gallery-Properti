@@ -18,6 +18,7 @@
 .navbar-custom {
   background-color: #0d0e16;
   color: white;
+
 }
 
 .navbar-custom .navbar-brand,
@@ -77,6 +78,16 @@ body {
   color: white;
 }
 
+.blackbox-header {
+  background-color: #000000;
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  font-size: 50px;
+}
+
 
 #text1_g {
   color: #ebbd00;
@@ -104,7 +115,7 @@ body {
   bottom: 21vw;
   /*important*/
   padding: 25px;
-  margin: -50px;
+  /* margin: -50px; */
   background: #f7f7f7;
 }
 
@@ -136,8 +147,34 @@ body {
   color: white;
 }
 
+.two-box {
+  background-color: darkblue;
+}
 
+.page-footer-main {
+  background-color: #000000;
+}
 
 .page-footer {
   background-color: #000000;
+  /* position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem; */
+}
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }

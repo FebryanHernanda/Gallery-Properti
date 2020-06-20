@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="blackbox">
+    <div class="title-guarantee">
         <div class="text-center">
             <p id="text1_g">Lorem Ipsum</p>
             <p id="text2_g">Lorem Ipsum</p>
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="blackbox">
+    <div class="title-guarantee">
         <div class="text-center">
             <p id="text2_g">Lorem Ipsum</p>
         </div>
@@ -115,6 +115,25 @@
     </div>
 
 
+
+    <!-- <footer class="page-footer-main font-small blue pt-4 mt-5 ">
+        <div class="text-center text-white text-md-left">
+            <div class="d-flex flex-row justify-content-around my-flex-container">
+                <div class="p-2 my-flex-item">
+                    <h5>Lorem Ipsum</h5>
+                </div>
+                <div class="p-2 my-flex-item">
+                    <h5>Lorem Ipsum</h5>
+                </div>
+                <div class="p-2 my-flex-item">
+                    <h5>Lorem Ipsum</h5>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            </div>
+        </div>
+    </footer> -->
 
     <?php $this->load->view("partials/footer") ?>
 
