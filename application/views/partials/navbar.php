@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a id="itemnav" class="nav-link" href="#">GALLERY<span class="sr-only">(current)</span></a>
+                <a id="itemnav" class="nav-link" href="<?php echo base_url("gallery") ?>">GALLERY<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">

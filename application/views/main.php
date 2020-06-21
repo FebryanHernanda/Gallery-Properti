@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="title-guarantee">
+    <div class="blackbox">
         <div class="text-center">
             <p id="text1_g">Lorem Ipsum</p>
             <p id="text2_g">Lorem Ipsum</p>
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="title-guarantee">
+    <div class="blackbox">
         <div class="text-center">
             <p id="text2_g">Lorem Ipsum</p>
         </div>
@@ -79,7 +79,8 @@
                     <div class="card-body">
                         <h3 class="card-title text-left">Lorem Ipsum</h3>
                         <h5 class="text-right">RP10.000.000</h5>
-                        <p></p>
+                        <hr>
+                        <p style="font-size: 13px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
             </div>
@@ -89,6 +90,8 @@
                     <div class="card-body">
                         <h3 class="card-title text-left">Lorem Ipsum</h3>
                         <h5 class="text-right">RP10.000.000</h5>
+                        <hr>
+                        <p style="font-size: 13px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
             </div>
@@ -99,6 +102,8 @@
                     <div class="card-body">
                         <h3 class="card-title text-left">Lorem Ipsum</h3>
                         <h5 class="text-right">RP10.000.000</h5>
+                        <hr>
+                        <p style="font-size: 13px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
             </div>
@@ -108,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col pt-4 text-center">
-                    <button id="buttonview" type="button" class="btn btn-outline-warning btn-lg ">View All</button>
+                    <a href="<?php echo base_url("gallery") ?>" id="buttonview" type="button" class="btn btn-outline-warning btn-lg ">View All</a>
                 </div>
             </div>
         </div>
@@ -116,24 +121,7 @@
 
 
 
-    <!-- <footer class="page-footer-main font-small blue pt-4 mt-5 ">
-        <div class="text-center text-white text-md-left">
-            <div class="d-flex flex-row justify-content-around my-flex-container">
-                <div class="p-2 my-flex-item">
-                    <h5>Lorem Ipsum</h5>
-                </div>
-                <div class="p-2 my-flex-item">
-                    <h5>Lorem Ipsum</h5>
-                </div>
-                <div class="p-2 my-flex-item">
-                    <h5>Lorem Ipsum</h5>
-                </div>
-            </div>
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-            </div>
-        </div>
-    </footer> -->
+
 
     <?php $this->load->view("partials/footer") ?>
 
