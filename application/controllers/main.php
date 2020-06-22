@@ -18,4 +18,9 @@ class main extends CI_Controller
 	{
 		$this->load->view('gallery');
 	}
+
+	public function detail_gallery()
+	{
+		$this->load->view('detailgallery');
+	}
 }

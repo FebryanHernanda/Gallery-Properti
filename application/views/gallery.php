@@ -40,7 +40,7 @@
                                 <hr>
                                 <p style="font-size: 13px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 <div class="text-center">
-                                    <a href="#" class="btn btn-primary stretched-link">View</a>
+                                    <a href="<?php echo base_url('detail-gallery') ?>" class="btn btn-primary stretched-link">View</a>
                                 </div>
                             </div>
                         </div>

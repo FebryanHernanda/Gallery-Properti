@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['about-us'] = 'main/about_us';
 $route['gallery'] = 'main/view_gallery';
+$route['detail-gallery'] = 'main/detail_gallery';
