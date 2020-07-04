@@ -3,10 +3,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class main extends CI_Controller
 {
-
-	public function index()
+	public function __construct()
 	{
-		$this->load->view('main');
+		parent::__construct();
+
+		$this->load->database();
+		$this->load->helper('url');
+		$this->load->model('m_data');
+	}
+	public function index(){
+		$data['properti'] = $this->m_data->get_all_properti();
+		$this->load->view('main', $data); 
 	}
 
 	public function about_us()
