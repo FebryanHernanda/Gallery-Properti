@@ -28,9 +28,12 @@ class main extends CI_Controller
 		$this->load->view('gallery', $data);
 	}
 
-	public function detail_gallery()
+	public function detail_gallery($id)
 	{
-		$data['properti'] = $this->m_data->get_all_properti();
+		// $data['properti'] = $this->m_data->get_all_properti();
+		$data['properti'] = $this->m_data->detail($id);
 		$this->load->view('detailgallery', $data);
+		// print_r($data['properti']);
 	}
+
 }

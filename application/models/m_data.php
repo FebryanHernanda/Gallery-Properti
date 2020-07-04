@@ -5,4 +5,8 @@ class M_data extends CI_Model{
 		$query = $this->db->get('Properti');
         return $query->result();
 	}
+	public function detail($id){
+		$query = $this->db->query('SELECT * FROM `Properti` WHERE propertiCode = "$id"');
+		return $query->result();
+	}
 }

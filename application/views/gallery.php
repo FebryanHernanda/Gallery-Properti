@@ -35,14 +35,14 @@
                 <?php foreach ($properti as $p) { ?>
                     <div class="p-2 my-flex-item">
                         <div class="card" style="width: 18rem; border:2;">
-                            <img class="card-img-top" src="<?php echo "data:image/jpeg;base64," . base64_encode($p->Gambar); ?>" alt="Card image cap">
+                        <img class="card-img-top" class="img-thumbnail" src="<?php echo base_url()?>/assets/uploads/files/<?php echo $p->Gambar ?>" alt="Card image cap" style="width: 100%; height: 250px ;">
                             <div class="card-body">
                                 <h3 class="card-title text-left"><?php echo $p->Nama ?></h3>
                                 <h5 class="text-right">RP <?php echo $p->Harga ?></h5>
                                 <hr>
                                 <p style="font-size: 13px;"><?php echo $p->Deskripsi ?></p>
                                 <div class="text-center">
-                                    <a href="<?php echo base_url('detail-gallery') ?>" class="btn btn-primary stretched-link">View</a>
+                                    <a href="<?php echo base_url('detail-gallery/'). $p->propertiCode ?>" class="btn btn-primary stretched-link">View</a>
                                 </div>
                             </div>
                         </div>
