@@ -71,24 +71,25 @@
         </div>
     </div>
 
-<div class="container-fluid mt-5">
-        
+    <div class="container-fluid mt-5">
+
         <div class="d-flex flex-row justify-content-around my-flex-container">
-            <?php foreach($properti as $p){ ?>
-            <div class="p-2 my-flex-item">
-                <div class="card" style="width: 18rem; border:2;">
-                    <img class="card-img-top" src="<?php echo "data:image/jpeg;base64,".base64_encode($p->Gambar); ?>" alt="Card image cap">
-                    <div class="card-body">
-                        <h3 class="card-title text-left"><?php echo $p->Nama?></h3>
-                        <h5 class="text-right">RP <?php echo $p->Harga?></h5>
-                        <hr>
-                        <p style="font-size: 13px;"><?php echo $p->Deskripsi?></p>
+            <?php foreach ($properti as $p) { ?>
+                <div class="p-2 my-flex-item">
+                    <div class="card" style="width: 18rem; border:2;">
+                        <img class="card-img-top" src="<?php echo "data:image/jpeg;base64," . base64_encode($p->Gambar); ?>" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title text-left"><?php echo $p->Nama ?></h3>
+                            <h5 class="text-right">RP <?php echo $p->Harga ?></h5>
+                            <hr>
+                            <p style="font-size: 13px;"><?php echo $p->Deskripsi ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php } ?>
             <!-- </div> -->
         </div>
+
         <div class="container">
             <div class="row">
                 <div class="col pt-4 text-center">

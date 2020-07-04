@@ -11,9 +11,10 @@ class main extends CI_Controller
 		$this->load->helper('url');
 		$this->load->model('m_data');
 	}
-	public function index(){
+	public function index()
+	{
 		$data['properti'] = $this->m_data->get_all_properti();
-		$this->load->view('main', $data); 
+		$this->load->view('main', $data);
 	}
 
 	public function about_us()
@@ -23,11 +24,13 @@ class main extends CI_Controller
 
 	public function view_gallery()
 	{
-		$this->load->view('gallery');
+		$data['properti'] = $this->m_data->get_all_properti();
+		$this->load->view('gallery', $data);
 	}
 
 	public function detail_gallery()
 	{
-		$this->load->view('detailgallery');
+		$data['properti'] = $this->m_data->get_all_properti();
+		$this->load->view('detailgallery', $data);
 	}
 }

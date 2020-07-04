@@ -29,8 +29,27 @@
     <div class="container-fluid mt-5">
 
         <div class="d-flex flex-row justify-content-around">
+
             <div class="row ">
-                <div class="col-md-4">
+
+                <?php foreach ($properti as $p) { ?>
+                    <div class="p-2 my-flex-item">
+                        <div class="card" style="width: 18rem; border:2;">
+                            <img class="card-img-top" src="<?php echo "data:image/jpeg;base64," . base64_encode($p->Gambar); ?>" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title text-left"><?php echo $p->Nama ?></h3>
+                                <h5 class="text-right">RP <?php echo $p->Harga ?></h5>
+                                <hr>
+                                <p style="font-size: 13px;"><?php echo $p->Deskripsi ?></p>
+                                <div class="text-center">
+                                    <a href="<?php echo base_url('detail-gallery') ?>" class="btn btn-primary stretched-link">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+
+                <!-- <div class="col-md-4">
                     <div class="p-2 my-flex-item">
                         <div class="card" style="width: 20rem; border:2;">
                             <img class="card-img-top" src="assets/img/img2.jpg" alt="Card image cap">
@@ -40,7 +59,7 @@
                                 <hr>
                                 <p style="font-size: 13px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 <div class="text-center">
-                                    <a href="<?php echo base_url('detail-gallery') ?>" class="btn btn-primary stretched-link">View</a>
+                                    <a href=" echo base_url('detail-gallery') ?>" class="btn btn-primary stretched-link">View</a>
                                 </div>
                             </div>
                         </div>
@@ -79,10 +98,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div> -->
 
             </div>
+
         </div>
     </div>
 
